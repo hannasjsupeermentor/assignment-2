@@ -1,0 +1,27 @@
+#Hanna Morris
+#10/20/2019
+#Assignment #2
+
+
+
+
+test_scores = [90, 98, 20, 52, 78, 80, 82, 87, 79, 80] ### a list of 10 test scores
+print(test_scores) ###printing the first set of scores
+
+x = input("Do you want to add an additional scores? yes/no")
+if x == ("yes"):  ###adding a integer to the test scores list
+    a = int(input("What additional test scores do you want to add?"))
+    test_scores.append(a)
+    print(test_scores)
+
+y = input("Would you like to delete any scores? yes/no")
+if y == ("yes"): ###removing a integer from the test score list
+    b = int(input("What score would you like to remove?"))
+    test_scores.remove(b)
+    print(test_scores)
+    
+test_scores.sort() ###wrting the list from least to greatest
+print("Test scores sorted: " + str(test_scores))
+
+Average = sum(test_scores) / len(test_scores)   ###finding the average scores
+print("Test Score Average: " + str(Average))
